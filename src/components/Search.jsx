@@ -13,7 +13,10 @@ function Search({ onSearch }) {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="relative w-screen max-w-md">
+      <form
+        onSubmit={handleSubmit}
+        className="relative md:w-screen md:max-w-md min-[344px]:w-full"
+      >
         <input
           type="text"
           placeholder="Digite o Nome de um Usuário"

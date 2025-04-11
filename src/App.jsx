@@ -31,22 +31,22 @@ function App() {
   return (
     <>
       <div className="h-screen bg-[#141c2f] flex justify-center items-center">
-        <div className="flex flex-col justify-center items-center bg-stone-900 w-2/3 h-2/3 gap-8">
+        <div className="flex flex-col justify-center items-center bg-stone-900 min-[344px]:w-4/5 min-[344px]:h-4/5 md:w-2/3 md:h-2/3 gap-8">
           <div className="flex flex-row-reverse gap-2 justify-center">
-            <h1 className="text-6xl text-white">
+            <h1 className="min-[344px]:text-4xl md:text-6xl text-white">
               Perfil{" "}
               <span className="font-[Roboto] font-extrabold text">GitHub</span>
             </h1>
             <img
               src="./github_icon.svg"
               alt="icone do github"
-              className="w-16 h-16"
+              className="min-[344px]:w-10 min-[344px]:h-10 md:w-16 md:h-16"
             />
           </div>
           <div>
             <Search onSearch={loadUser} />
           </div>
-          <div className="px-5">
+          <div className="flex flex-col justify-center items-center px-5">
             {loading && <Loading />}
             {error && !loading && <Error />}
             {userData && !loading && <User user={userData} />}
