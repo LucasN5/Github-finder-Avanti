@@ -2,7 +2,7 @@ import "./App.css";
 import Error from "./components/Error.jsx";
 import Loading from "./components/Loading.jsx";
 import Search from "./components/Search.jsx";
-import User from "./components/user.jsx";
+import User from "./components/User.jsx";
 import { useState } from "react";
 
 function App() {
